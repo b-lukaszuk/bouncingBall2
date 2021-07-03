@@ -1,0 +1,67 @@
+<div>
+  <table>
+    <tr>
+      <td>
+        <div class="gameboard">
+          <div *ngFor="let row of gameBoard.getGameBoard(); index as rId">
+            <div
+              *ngFor="let col of row; index as cId"
+              [ngClass]="getClassForField([rId, cId])"
+            >
+              <span> </span>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <h1>Bouncing ball (description):</h1>
+        <p>Set ball into motion by pressing the start button</p>
+        <p>
+          The ball will stop automatically once it reaches its starting position
+        </p>
+        <hr />
+        <p>Change movement direction</p>
+        <table>
+          <tr>
+            <td>
+              <button type="button" (click)="changeShift(1)">&#x2196;</button>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+              <button type="button" (click)="changeShift(2)">&#x2197;</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" (click)="changeShift(3)">&#x2199;</button>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+              <button type="button" (click)="changeShift(4)">&#x2198;</button>
+            </td>
+          </tr>
+        </table>
+        <br />
+        <hr />
+        <br />
+        <button
+          type="button"
+          (click)="setStartingBallAtRandomPosition()"
+          [disabled]="gameStarted"
+        >
+          Set ball at random position
+        </button>
+        <br /><br />
+        <button
+          type="button"
+          (click)="setBallIntoMotion()"
+          [disabled]="gameStarted"
+        >
+          Set ball into motion
+        </button>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<router-outlet></router-outlet>

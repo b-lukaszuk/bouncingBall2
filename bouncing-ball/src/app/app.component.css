@@ -1,0 +1,64 @@
+.gameboard {
+  /* background-color: #98AFC7; */
+}
+
+.empty {
+  width: 2.6em;
+  height: 2.6em;
+  float: left;
+  background-color: white;
+  /* background-color: #98AFC7; */
+  border: 0.1em white solid;
+}
+
+.boarder {
+  width: 2.6em;
+  height: 2.6em;
+  float: left;
+  background-color: darkgray;
+  border: 0.1em white solid;
+}
+
+.magicBrick {
+  width: 2.6em;
+  height: 2.6em;
+  float: left;
+  background-color: lightblue;
+  border: 0.1em white solid;
+}
+
+.ball {
+  width: 2.6em;
+  height: 2.6em;
+  float: left;
+  background-color: #FBB917;
+  border-radius: 50%;
+  border: 0.1em white solid;
+}
+
+button {
+    background-color: #008CBA; /* blue */
+    border: none;
+    border-radius: 0.4em;
+    color: white;
+    padding: 0.4em 0.8em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #3566e4; /* blue */
+}
+
+button:disabled {
+    cursor: auto;
+    background-color: lightgray;
+}
+
+p {
+    font-size: 1.2.6em;
+}
