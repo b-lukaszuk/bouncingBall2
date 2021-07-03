@@ -2,7 +2,7 @@
 
 Implementacja zadania egzaminacyjnego z podyplomowki PB JSDeveloper 2020/2021
 
-Deployed version -> Here
+**Deployed version ->** [Here](https://b-lukaszuk.github.io/bouncingBall2/)
 
 # Task 2 Exam
 
